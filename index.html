@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdulrahman Ali - Android Developer</title>
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    .header {
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 2px solid #ddd;
+    }
+    .header h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin: 0;
+    }
+    .header h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: #777;
+    }
+    .contact {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .contact a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    .contact a:hover {
+      color: #2980b9;
+    }
+    .section {
+      padding: 20px;
+      border-bottom: 2px solid #ddd;
+    }
+    .section h2 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    .section h2::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background-color: #3498db;
+      bottom: -5px;
+      left: 0;
+    }
+    .section p, .section ul, .section li {
+      font-size: 16px;
+      line-height: 1.8;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    .section i {
+      color: #3498db;
+      margin-right: 10px;
+    }
+    /* Cool Button Animation */
+    .contact a {
+      position: relative;
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #3498db;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+    }
+    .contact a:hover {
+      background-color: #3498db;
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <h1>Abdulrahman Ali</h1>
+      <h2>Android Developer</h2>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+      <a href="mailto:Abdulrahman.ali19@outlook.com"><i class="fas fa-envelope"></i> Email</a>
+      <a href="https://github.com/AbdulrahmanAli19" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/abdulrahmanali19/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="section">
+      <h2><i class="fas fa-user"></i> Summary</h2>
+      <p>Innovative Android developer experienced in writing clean, efficient, and maintainable code. Passionate about developing mobile apps that solve real-world problems and enhance user experience. Adept at collaborating in cross-functional teams to bring products to life.</p>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <ul>
+        <li><strong>Associate Software Engineer — Fawry (December 2023 - Present)</strong>
+          <ul>
+            <li>Troubleshot and debugged existing software, improving app performance by 25%.</li>
+            <li>Refactored code to increase readability and maintainability.</li>
+          </ul>
+        </li>
+        <li><strong>Native Android Developer — Quantum Promoting Network (November 2022 - December 2023)</strong>
+          <ul>
+            <li>Added new features and maintained existing Android applications for high-profile clients.</li>
+            <li>Collaborated closely with designers and backend developers to meet business requirements.</li>
+            <li>Projects: Kamashka, Kamashka-Delivery, Eventy (Achieved 10K+ downloads with a 4.8+ rating).</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <ul>
+        <li><strong>Information Technology Institute (ITI), Egypt</strong> - Diploma in Native Mobile Development (October 2021 - July 2022)
+          <ul>
+            <li>Gained hands-on experience in Android development, mastering modern technologies like Jetpack Compose and MVVM architecture.</li>
+          </ul>
+        </li>
+        <li><strong>New Cairo Academy, Egypt</strong> - Bachelor's Degree in Computer Science and MIS (September 2017 - July 2021)</li>
+      </ul>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section">
+      <h2><i class="fas fa-tools"></i> Technical Skills</h2>
+      <div class="skills-grid">
+        <ul>
+          <li><i class="fas fa-code"></i> Android (Kotlin/Java)</li>
+          <li><i class="fas fa-database"></i> SQLite, Room</li>
+          <li><i class="fas fa-sync"></i> Kotlin Coroutines</li>
+          <li><i class="fas fa-cogs"></i> Dependency Injection (Hilt, Koin)</li>
+        </ul>
+        <ul>
+          <li><i class="fas fa-sync-alt"></i> REST APIs (Retrofit, Ktor)</li>
+          <li><i class="fas fa-mobile-alt"></i> Jetpack Compose</li>
+          <li><i class="fas fa-project-diagram"></i> Architecture Patterns (MVVM, MVI, MVP)</li>
+          <li><i class="fas fa-vial"></i> Unit Testing</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="section">
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <ul>
+          <li><strong>PicsLand</strong> - An Android image-browsing app featuring efficient data loading with Paging 3.0 and modern dependency injection using Dagger-Hilt. <a href="https://github.com/AbdulrahmanAli19/PicsLand" target="_blank">View on GitHub</a></li>
+          <li><strong>KLIM_TASK</strong> - A task management app built using Kotlin DSL and Coroutines for seamless concurrency management. <a href="https://github.com/AbdulrahmanAli19/KLIM_TASK" target="_blank">View on GitHub</a></li>
+        </ul>
+      </div>
+
+    <!-- Languages Section -->
+    <div class="section">
+      <h2><i class="fas fa-language"></i> Languages</h2>
+      <ul>
+        <li><strong>Arabic</strong> - Native</li>
+        <li><strong>English</strong> - Fluent</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
